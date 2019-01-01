@@ -5,12 +5,12 @@
     <!-- 基本信息 -->
     <description>SpringBoot 多模块构建示例</description>
     <modelVersion>4.0.0</modelVersion>
-    <name>test_business</name>
+    <name>tio-parent</name>
     <packaging>pom</packaging>
 
     <!-- 项目说明：这里作为聚合工程的父工程 -->
     <groupId>com.tio</groupId>
-    <artifactId>test_business</artifactId>
+    <artifactId>tio-parent</artifactId>
     <version>1.0.0.RELEASE</version>
 
     <!-- 继承说明：这里继承SpringBoot提供的父工程 -->
