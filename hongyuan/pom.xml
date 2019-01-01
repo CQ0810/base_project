@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>com.tio</groupId>
-        <artifactId>tio-parent</artifactId>
+        <artifactId>base-project-parent</artifactId>
         <version>1.0.0.RELEASE</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>com.tio</groupId>
-            <artifactId>core</artifactId>
+            <artifactId>tds-base-framework</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>

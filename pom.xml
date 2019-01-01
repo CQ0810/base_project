@@ -5,12 +5,12 @@
     <!-- 基本信息 -->
     <description>SpringBoot 多模块构建示例</description>
     <modelVersion>4.0.0</modelVersion>
-    <name>tio-parent</name>
+    <name>base-project-parent</name>
     <packaging>pom</packaging>
 
     <!-- 项目说明：这里作为聚合工程的父工程 -->
     <groupId>com.tio</groupId>
-    <artifactId>tio-parent</artifactId>
+    <artifactId>base-project-parent</artifactId>
     <version>1.0.0.RELEASE</version>
 
     <!-- 继承说明：这里继承SpringBoot提供的父工程 -->
@@ -23,7 +23,7 @@
 
     <!-- 模块说明：这里声明多个子模块 -->
     <modules>
-        <module>core</module>
+        <module>tds-java-base-framework</module>
         <module>hongyuan</module>
     </modules>
 
@@ -51,22 +51,6 @@
         <hutool.version>4.1.19</hutool.version>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.tio</groupId>
-                <artifactId>business-core</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.tio</groupId>
-                <artifactId>business-project</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
-    <!-- 版本说明：这里统一管理依赖的版本号 -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -127,6 +111,11 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>${mybatis.plus.spring.boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
         <dependency>
